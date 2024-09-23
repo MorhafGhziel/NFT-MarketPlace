@@ -12,17 +12,17 @@ const Navigation = () => {
         <div className="flex justify-between">
           <Image src={NavLogo} alt="Nav Logo" />
           <div className="text-white font-sans font-semibold text-base flex items-center">
-            <Link href="/" className="px-[20px]">
+            <Link href="/" className="px-[20px] hidden md:hidden lg:block">
               Marketplace
             </Link>
-            <Link href="/" className="px-[20px]">
+            <Link href="/" className="px-[20px] hidden md:hidden lg:block">
               Rankings
             </Link>
-            <Link href="/" className="px-[20px]">
+            <Link href="/" className="px-[20px] hidden md:hidden lg:block">
               Connect a wallet
             </Link>
-            <Link href="/" className="px-[20px]">
-              <div className="flex gap-4 bg-[#A259FF] px-[30px] py-[20px] rounded-3xl">
+            <Link href="/" className="px-[20px] hidden md:hidden lg:block">
+              <div className="lg:flex gap-4 bg-[#A259FF] px-[30px] py-[20px] md:hidden hidden rounded-3xl">
                 <Image src={UserIcon} alt="User Icon" />
                 Sign Up
               </div>
