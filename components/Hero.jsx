@@ -8,8 +8,8 @@ const Hero = () => {
   return (
     <section className="py-[30px] bg-[#2B2B2B]">
       <div className="md:flex flex-wrap gap-x-10 items-center justify-center mx-[30px]">
-        <div className="max-w-[340px]">
-          <div className="font-sans text-white">
+        <div className="max-w-[340px] m-auto md:m-0">
+          <div className="font-sans text-white m-auto">
             <h4 className="text-[28px] md:text-[38px] font-semibold">
               Discover digital art & Collect NFTs
             </h4>
@@ -18,27 +18,27 @@ const Hero = () => {
               sell art from more than 20k NFT artists.
             </h2>
           </div>
-          <div className="bg-[#A259FF] px-[50px] py-5 rounded-3xl justify-center items-center text-center md:block hidden mt-10">
+          <div className="bg-[#A259FF] px-[50px] py-5 rounded-3xl md:block hidden mt-5 max-w-fit">
             <button className="text-white font-semibold font-sans gap-4 flex">
               <Image src={RocketIcon} alt="RocketLaunch Icon" className="w-5" />
               Get Started
             </button>
           </div>
-          <div className="mt-10 md:block hidden">
-            <Image src={HeroInfo} alt="Hero Info" />
+          <div className="mt-10 md:block hidden m-0">
+            <Image src={HeroInfo} alt="Hero Info" className="w-[330px]" />
           </div>
         </div>
         <div className="my-10">
-          <Image src={HeroCard} alt="Hero Card" className="w-[330px]" />
+          <Image src={HeroCard} alt="Hero Card" className="w-[315px] m-auto" />
         </div>
-        <div className="bg-[#A259FF] px-[50px] py-5 rounded-3xl justify-center items-center text-center flex md:hidden">
+        <div className="bg-[#A259FF] px-[50px] py-5 rounded-3xl justify-center items-center text-center flex md:hidden max-w-fit m-auto">
           <button className="text-white font-semibold font-sans gap-4 flex">
             <Image src={RocketIcon} alt="RocketLaunch Icon" className="w-5" />
             Get Started
           </button>
         </div>
-        <div className="mt-10 block md:hidden">
-          <Image src={HeroInfo} alt="Hero Info" />
+        <div className="mt-10 block md:hidden ">
+          <Image src={HeroInfo} alt="Hero Info" className="w-[311px] m-auto" />
         </div>
       </div>
     </section>
