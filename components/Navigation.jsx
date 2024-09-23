@@ -3,6 +3,7 @@ import NavLogo from "@/public/NavLogo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import UserIcon from "@/public/User.svg";
+import ListIcon from "@/public/List.svg";
 
 const Navigation = () => {
   return (
