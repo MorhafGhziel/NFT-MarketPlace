@@ -39,14 +39,14 @@ const Hero = () => {
             className="w-[340px] md:w-[330px] lg:w-[540px] m-auto"
           />
         </div>
-        <div className="bg-[#A259FF] px-[50px] py-5 rounded-3xl justify-center items-center text-center flex md:hidden max-w-fit m-auto">
+        <div className="bg-[#A259FF] px-[50px] py-5 rounded-3xl justify-center items-center text-center max-w-[340px] flex md:hidden m-auto">
           <button className="text-white font-semibold font-sans gap-4 flex">
             <Image src={RocketIcon} alt="RocketLaunch Icon" className="w-5" />
             Get Started
           </button>
         </div>
-        <div className="mt-10 block md:hidden ">
-          <Image src={HeroInfo} alt="Hero Info" className="w-[311px] m-auto" />
+        <div className="mt-10 flex md:hidden">
+          <Image src={HeroInfo} alt="Hero Info" className="w-[315px]" />
         </div>
       </div>
     </section>
