@@ -2,6 +2,7 @@ import React from "react";
 import HeroCard from "@/public/HeroCard.svg";
 import Image from "next/image";
 import RocketIcon from "@/public/RocketLaunch.svg";
+import HeroInfo from "@/public/HeroCardInfo.svg";
 
 const Hero = () => {
   return (
@@ -24,6 +25,9 @@ const Hero = () => {
             <Image src={RocketIcon} alt="RocketLaunch Icon" className="w-5" />
             Get Started
           </button>
+        </div>
+        <div className="mt-10">
+          <Image src={HeroInfo} alt="Hero Info" />
         </div>
       </div>
     </section>
