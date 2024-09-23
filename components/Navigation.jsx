@@ -8,7 +8,7 @@ import ListIcon from "@/public/List.svg";
 const Navigation = () => {
   return (
     <header>
-      <div className="px-[50px] py-[20px] bg-[#2B2B2B]">
+      <div className="md:px-[50px] md:py-[20px] px-[30px] py-[15px] bg-[#2B2B2B]">
         <div className="flex justify-between">
           <Image src={NavLogo} alt="Nav Logo" />
           <div className="text-white font-sans font-semibold text-base flex items-center">
