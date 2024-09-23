@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="px-[50px] py-[20px] bg-[#2B2B2B]">
         <div className="flex justify-between">
           <Image src={NavLogo} alt="Nav Logo" />
-          <div className="text-white text-base flex items-center">
+          <div className="text-white font-sans font-semibold text-base flex items-center">
             <Link href="/" className="px-[20px]">
               Marketplace
             </Link>
