@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ["var(--font-work-sans)", "sans-serif"],
+    },
   },
   plugins: [],
 };
