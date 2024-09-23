@@ -27,6 +27,9 @@ const Navigation = () => {
                 Sign Up
               </div>
             </Link>
+            <Link href="/" className="lg:hidden md:block block">
+              <Image src={ListIcon} alt="ListIcon" />
+            </Link>
           </div>
         </div>
       </div>
