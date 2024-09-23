@@ -1,9 +1,11 @@
 import React from "react";
+import HeroCard from "@/public/HeroCard.svg";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="py-[30px] bg-[#2B2B2B]">
-      <div className="flex-wrap ml-[30px]">
+      <div className="md:flex  flex-wrap mx-[30px]">
         <div className="font-sans text-white">
           <h4 className="text-[28px] font-semibold">
             Discover digital art & Collect NFTs
@@ -13,7 +15,9 @@ const Hero = () => {
             sell art from more than 20k NFT artists.
           </h2>
         </div>
-        <div></div>
+        <div className="my-10">
+          <Image src={HeroCard} alt="Hero Card" />
+        </div>
       </div>
     </section>
   );
