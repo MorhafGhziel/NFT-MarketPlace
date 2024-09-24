@@ -6,3 +6,8 @@
   font-family: var(--font-work-sans);
   font-weight: 500;
 }
+
+.font-semilight {
+  font-family: var(--font-work-sans);
+  font-weight: 400;
+}
