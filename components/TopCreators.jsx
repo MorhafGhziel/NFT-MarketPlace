@@ -17,6 +17,14 @@ import RankingFive from "@/public/RankingFive.svg";
 import RankingSix from "@/public/RankingSix.svg";
 import RankingSeven from "@/public/RankingSeven.svg";
 import RankingEight from "@/public/RankingEight.svg";
+import AvatarNine from "@/public/AvatarNine.svg";
+import AvatarTen from "@/public/AvatarTen.svg";
+import AvatarEleven from "@/public/AvatarEleven.svg";
+import AvatarTwelve from "@/public/AvatarTwelve.svg";
+import RankingNine from "@/public/RankingNine.svg";
+import RankingTen from "@/public/RankingTen.svg";
+import RankingEleven from "@/public/RankingEleven.svg";
+import RankingTwelve from "@/public/RankingTwelve.svg";
 
 import TopCreatoursNumber from "@/public/TopCreatoursNumber.svg";
 
@@ -204,6 +212,94 @@ const TopCreators = () => {
               </div>
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">robotica</p>
+              </div>
+              <div className="flex justify-center items-center gap-2">
+                <p className="text-base text-[#858584]">Total Sales:</p>
+                <p className="font-normal">
+                  <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="bg-[#3B3B3B] rounded-2xl w-fit relative py-6 ">
+              <div className=" px-14">
+                <Image
+                  src={RankingNine}
+                  alt="Ranking Nine"
+                  className="top-4 left-4 absolute"
+                />
+                <Image src={AvatarNine} alt="Avatar Nine" />
+              </div>
+              <div className="flex justify-center mt-6">
+                <p className="text-[22px] font-sans">RustyRobot</p>
+              </div>
+              <div className="flex justify-center items-center gap-2">
+                <p className="text-base text-[#858584]">Total Sales:</p>
+                <p className="font-normal">
+                  <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="bg-[#3B3B3B] rounded-2xl w-fit relative py-6 ">
+              <div className=" px-14">
+                <Image
+                  src={RankingTen}
+                  alt="Ranking Ten"
+                  className="top-4 left-4 absolute"
+                />
+                <Image src={AvatarTen} alt="Avatar Ten" />
+              </div>
+              <div className="flex justify-center mt-6">
+                <p className="text-[22px] font-sans">animakid</p>
+              </div>
+              <div className="flex justify-center items-center gap-2">
+                <p className="text-base text-[#858584]">Total Sales:</p>
+                <p className="font-normal">
+                  <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="bg-[#3B3B3B] rounded-2xl w-fit relative py-6 ">
+              <div className=" px-14">
+                <Image
+                  src={RankingEleven}
+                  alt="Ranking Eleven"
+                  className="top-4 left-4 absolute"
+                />
+                <Image src={AvatarEleven} alt="Avatar Eleven" />
+              </div>
+              <div className="flex justify-center mt-6">
+                <p className="text-[22px] font-sans">Dotgu</p>
+              </div>
+              <div className="flex justify-center items-center gap-2">
+                <p className="text-base text-[#858584]">Total Sales:</p>
+                <p className="font-normal">
+                  <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="bg-[#3B3B3B] rounded-2xl w-fit relative py-6 ">
+              <div className=" px-14">
+                <Image
+                  src={RankingTwelve}
+                  alt="Ranking Twelve"
+                  className="top-4 left-4 absolute"
+                />
+                <Image src={AvatarTwelve} alt="Avatar Twelve" />
+              </div>
+              <div className="flex justify-center mt-6">
+                <p className="text-[22px] font-sans">Ghiblier</p>
               </div>
               <div className="flex justify-center items-center gap-2">
                 <p className="text-base text-[#858584]">Total Sales:</p>
