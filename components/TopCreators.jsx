@@ -64,7 +64,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">Keepitreal</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -85,7 +85,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">DigiLab</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -106,7 +106,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">GravityOne</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -127,7 +127,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">Juanie</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -148,7 +148,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">BlueWhale</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -169,7 +169,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">Mr fox</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -191,7 +191,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">Shroomie</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -213,7 +213,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">robotica</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -235,7 +235,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">RustyRobot</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -257,7 +257,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">animakid</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -279,7 +279,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">Dotgu</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
@@ -301,7 +301,7 @@ const TopCreators = () => {
               <div className="flex justify-center mt-6">
                 <p className="text-[22px] font-sans">Ghiblier</p>
               </div>
-              <div className="flex justify-center items-center gap-2">
+              <div className="flex justify-center items-center gap-2 mt-1">
                 <p className="text-base text-[#858584]">Total Sales:</p>
                 <p className="font-normal">
                   <Image src={TopCreatoursNumber} alt="Top Creatours Number" />
