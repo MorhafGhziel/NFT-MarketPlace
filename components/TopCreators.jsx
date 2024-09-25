@@ -31,13 +31,13 @@ import TopCreatoursNumber from "@/public/TopCreatoursNumber.svg";
 const TopCreators = () => {
   return (
     <section className="py-[60px] bg-[#2B2B2B] flex justify-center">
-      <div className="mx-[30px]">
-        <div className="flex justify-center gap-[180px]">
+      <div className="md:mx-[20px] mx-0">
+        <div className="flex justify-between gap-[180px]">
           <div className="text-white md:max-w-[280px] lg:max-w-full">
             <h2 className="lg:text-[38px] text-[28px] md:text-[28px] font-semibold">
               Top creators
             </h2>
-            <h2 className="text-[16px] lg:text-[22px] text-gray-200 font-sans tracking-wider mt-2">
+            <h2 className="text-[16px] lg:text-[22px] text-gray-200 max-w-[350px] md:w-full lg:w-full font-sans tracking-wider mt-2">
               Checkout Top Rated Creators on the NFT Marketplace
             </h2>
           </div>
@@ -50,18 +50,22 @@ const TopCreators = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14 text-white font-sans">
-          <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
-            <div className=" lg:px-14 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 text-white font-sans justify-center items-center lg:mx-12 mx-0">
+          <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex justify-between rounded-2xl w-fit relative lg:py-6 py-4">
+            <div className=" lg:px-14 md:px-4 px-0">
               <Image
                 src={RankingOne}
                 alt="Ranking One"
-                className="top-4 left-4 absolute"
+                className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
               />
-              <Image src={AvatarOne} alt="Avatar One" />
+              <Image
+                src={AvatarOne}
+                alt="Avatar One"
+                className="lg:w-[110px] w-[60px]"
+              />
             </div>
-            <div>
-              <div className="flex lg:justify-center justify-normal mt-6">
+            <div className="ml-6">
+              <div className="flex lg:justify-center justify-normal lg:mt-6 mt-0">
                 <p className="text-[22px] font-sans">Keepitreal</p>
               </div>
               <div className="flex justify-center items-center gap-2 mt-1">
@@ -73,17 +77,21 @@ const TopCreators = () => {
             </div>
           </div>
 
-          <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
-            <div className=" lg:px-14 px-4">
+          <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
+            <div className=" lg:px-14 md:px-4 px-0">
               <Image
                 src={RankingTwo}
                 alt="Ranking Two"
-                className="top-4 left-4 absolute"
+                className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
               />
-              <Image src={AvatarTwo} alt="Avatar Two" />
+              <Image
+                src={AvatarTwo}
+                alt="Avatar Two"
+                className="lg:w-[110px] w-[60px]"
+              />
             </div>
-            <div>
-              <div className="flex justify-center mt-6">
+            <div className="ml-6">
+              <div className="flex justify-normal lg:justify-center  lg:mt-6 mt-0">
                 <p className="text-[22px] font-sans">DigiLab</p>
               </div>
               <div className="flex justify-center items-center gap-2 mt-1">
@@ -95,17 +103,21 @@ const TopCreators = () => {
             </div>
           </div>
           <div>
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingThree}
                   alt="Ranking Three"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarThree} alt="Avatar Three" />
+                <Image
+                  src={AvatarThree}
+                  alt="Avatar Three"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
-              <div>
-                <div className="flex justify-center mt-6">
+              <div className="ml-6">
+                <div className="flex justify-normal lg:justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">GravityOne</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -121,17 +133,21 @@ const TopCreators = () => {
             </div>
           </div>
           <div>
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingFour}
                   alt="Ranking Four"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarFour} alt="Avatar Four" />
+                <Image
+                  src={AvatarFour}
+                  alt="Avatar Four"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
-              <div>
-                <div className="flex justify-center mt-6">
+              <div className="ml-6">
+                <div className="flex justify-normal lg:justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">Juanie</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -147,17 +163,21 @@ const TopCreators = () => {
             </div>
           </div>
           <div>
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingFive}
                   alt="Ranking Five"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarFive} alt="Avatar Five" />
+                <Image
+                  src={AvatarFive}
+                  alt="Avatar Five"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
-              <div>
-                <div className="flex justify-center mt-6">
+              <div className="ml-6">
+                <div className="flex justify-normal lg:justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">BlueWhale</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -172,18 +192,23 @@ const TopCreators = () => {
               </div>
             </div>
           </div>
+
           <div>
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block rounded-2xl w-fit relative lg:py-6 py-4 md:flex hidden">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block rounded-2xl w-fit relative lg:py-6 py-4 md:flex hidden">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingSix}
                   alt="Ranking Six"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarSix} alt="Avatar Six" />
+                <Image
+                  src={AvatarSix}
+                  alt="Avatar Six"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
-              <div>
-                <div className="flex justify-center mt-6">
+              <div className="ml-6">
+                <div className="flex justify-normal lg:justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">Mr fox</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -200,17 +225,21 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingSeven}
                   alt="Ranking Five"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarSeven} alt="Avatar Seven" />
+                <Image
+                  src={AvatarSeven}
+                  alt="Avatar Seven"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
               <div>
-                <div className="flex justify-center mt-6">
+                <div className="flex justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">Shroomie</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -227,17 +256,21 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingEight}
                   alt="Ranking Eight"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarEight} alt="Avatar Eight" />
+                <Image
+                  src={AvatarEight}
+                  alt="Avatar Eight"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
               <div>
-                <div className="flex justify-center mt-6">
+                <div className="flex justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">robotica</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -254,17 +287,21 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingNine}
                   alt="Ranking Nine"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarNine} alt="Avatar Nine" />
+                <Image
+                  src={AvatarNine}
+                  alt="Avatar Nine"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
               <div>
-                <div className="flex justify-center mt-6">
+                <div className="flex justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">RustyRobot</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -281,17 +318,21 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingTen}
                   alt="Ranking Ten"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarTen} alt="Avatar Ten" />
+                <Image
+                  src={AvatarTen}
+                  alt="Avatar Ten"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
               <div>
-                <div className="flex justify-center mt-6">
+                <div className="flex justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">animakid</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -308,17 +349,21 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingEleven}
                   alt="Ranking Eleven"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarEleven} alt="Avatar Eleven" />
+                <Image
+                  src={AvatarEleven}
+                  alt="Avatar Eleven"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
               <div>
-                <div className="flex justify-center mt-6">
+                <div className="flex justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">Dotgu</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -335,17 +380,21 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
-              <div className=" lg:px-14 px-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-4 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+              <div className=" lg:px-14 md:px-4 px-0">
                 <Image
                   src={RankingTwelve}
                   alt="Ranking Twelve"
-                  className="top-4 left-4 absolute"
+                  className="lg:top-4 lg:left-4 md:top-3 md:left-6 top-3 left-4 absolute"
                 />
-                <Image src={AvatarTwelve} alt="Avatar Twelve" />
+                <Image
+                  src={AvatarTwelve}
+                  alt="Avatar Twelve"
+                  className="lg:w-[110px] w-[60px]"
+                />
               </div>
               <div>
-                <div className="flex justify-center mt-6">
+                <div className="flex justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">Ghiblier</p>
                 </div>
                 <div className="flex justify-center items-center gap-2 mt-1">
@@ -360,7 +409,7 @@ const TopCreators = () => {
               </div>
             </div>
           </div>
-          <button className="flex items-center justify-center gap-x-2 border-2 border-[#A259FF] rounded-2xl px-[40px] py-[20px] max-w-[415px] md:hidden lg:hidden">
+          <button className="flex items-center justify-center gap-x-2 border-2 border-[#A259FF] rounded-2xl px-[40px] py-[20px] max-w-[300px] md:hidden lg:hidden">
             <Image src={PurpleRocket} alt="purple rocket" />
             <p className="font-semibold">View Rankings</p>
           </button>
