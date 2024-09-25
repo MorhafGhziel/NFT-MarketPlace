@@ -37,7 +37,7 @@ const TrendingCollection = () => {
   ];
 
   return (
-    <section className="py-[80px] bg-[#2B2B2B] flex justify-center">
+    <section className="py-[90px] bg-[#2B2B2B] flex justify-center">
       <div className="mx-[30px]">
         <div className="text-white">
           <h2 className="text-[38px] font-semibold">Trending Collection</h2>
@@ -74,7 +74,7 @@ const TrendingCollection = () => {
                 <p className="text-gray-200 text-base">Shroomie</p>
               </div>
             </div>
-            <div>
+            <div className="lg:block hidden md:hidden">
               <Image src={Prim3} alt="Prim One" />
               <div className="flex gap-4 mt-4">
                 <Image src={sec3} alt="Sec One" />
