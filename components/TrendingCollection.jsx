@@ -40,8 +40,10 @@ const TrendingCollection = () => {
     <section className="py-[90px] bg-[#2B2B2B] flex justify-center">
       <div className="mx-[30px]">
         <div className="text-white">
-          <h2 className="text-[38px] font-semibold">Trending Collection</h2>
-          <h2 className="text-[22px] text-gray-200 font-sans tracking-wider mt-2">
+          <h2 className="lg:text-[38px] text-[28px] md:text-[28px] font-semibold">
+            Trending Collection
+          </h2>
+          <h2 className="text-[16px] lg:text-[22px] text-gray-200 font-sans tracking-wider mt-2">
             Checkout our weekly updated trending collection.
           </h2>
         </div>
