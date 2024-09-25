@@ -33,7 +33,7 @@ const TopCreators = () => {
     <section className="py-[60px] bg-[#2B2B2B] flex justify-center">
       <div className="mx-[30px]">
         <div className="flex justify-center gap-[180px]">
-          <div className="text-white md:max-w-[400px] lg:max-w-full">
+          <div className="text-white md:max-w-[280px] lg:max-w-full">
             <h2 className="lg:text-[38px] text-[28px] md:text-[28px] font-semibold">
               Top creators
             </h2>
@@ -43,15 +43,15 @@ const TopCreators = () => {
           </div>
 
           <div className=" items-center text-white hidden md:flex">
-            <button className="flex items-center gap-x-2 border-2 border-[#A259FF] rounded-2xl px-[50px] py-[14px]">
+            <button className="flex items-center gap-x-2 border-2 border-[#A259FF] rounded-2xl px-[50px] py-[14px] w-[250px]">
               <Image src={PurpleRocket} alt="purple rocket" />
               <p className="font-semibold">View Rankings</p>
             </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8  mt-14 text-white font-sans">
-          <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14 text-white font-sans">
+          <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
             <div className=" lg:px-14 px-4">
               <Image
                 src={RankingOne}
@@ -73,7 +73,7 @@ const TopCreators = () => {
             </div>
           </div>
 
-          <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
+          <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
             <div className=" lg:px-14 px-4">
               <Image
                 src={RankingTwo}
@@ -95,7 +95,7 @@ const TopCreators = () => {
             </div>
           </div>
           <div>
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingThree}
@@ -121,7 +121,7 @@ const TopCreators = () => {
             </div>
           </div>
           <div>
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingFour}
@@ -147,7 +147,7 @@ const TopCreators = () => {
             </div>
           </div>
           <div>
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingFive}
@@ -173,7 +173,7 @@ const TopCreators = () => {
             </div>
           </div>
           <div>
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block rounded-2xl w-fit relative lg:py-6 py-4 md:flex hidden">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block rounded-2xl w-fit relative lg:py-6 py-4 md:flex hidden">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingSix}
@@ -200,7 +200,7 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingSeven}
@@ -227,7 +227,7 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingEight}
@@ -254,7 +254,7 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingNine}
@@ -281,7 +281,7 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingTen}
@@ -308,7 +308,7 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingEleven}
@@ -335,7 +335,7 @@ const TopCreators = () => {
           </div>
 
           <div className="hidden lg:block">
-            <div className="bg-[#3B3B3B] lg:px-0 px-10 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
+            <div className="bg-[#3B3B3B] lg:px-0 px-10 md:px-4 lg:block flex rounded-2xl w-fit relative lg:py-6 py-4 ">
               <div className=" lg:px-14 px-4">
                 <Image
                   src={RankingTwelve}
