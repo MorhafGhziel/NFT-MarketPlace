@@ -30,7 +30,7 @@ import TopCreatoursNumber from "@/public/TopCreatoursNumber.svg";
 
 const TopCreators = () => {
   return (
-    <section className="py-[70px] bg-[#2B2B2B] flex justify-center">
+    <section className="py-[60px] bg-[#2B2B2B] flex justify-center">
       <div className="mx-[30px]">
         <div className="flex justify-center gap-[180px]">
           <div className="text-white md:max-w-[400px] lg:max-w-full">
