@@ -61,7 +61,7 @@ const TrendingCollection = () => {
                 <p className="text-gray-200 text-base">MrFox</p>
               </div>
             </div>
-            <div>
+            <div className="hidden md:block">
               <Image src={Prim2} alt="Prim One" />
               <div className="flex gap-4 mt-4">
                 <Image src={sec2} alt="Sec One" />
