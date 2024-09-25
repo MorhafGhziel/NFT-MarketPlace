@@ -64,7 +64,7 @@ const TopCreators = () => {
                 className="lg:w-[110px] w-[60px]"
               />
             </div>
-            <div className="ml-6">
+            <div className=" md:ml-0 ml-6">
               <div className="flex lg:justify-center justify-normal lg:mt-6 mt-0">
                 <p className="text-[22px] font-sans">Keepitreal</p>
               </div>
@@ -90,7 +90,7 @@ const TopCreators = () => {
                 className="lg:w-[110px] w-[60px]"
               />
             </div>
-            <div className="ml-6">
+            <div className=" md:ml-0 ml-6">
               <div className="flex justify-normal lg:justify-center  lg:mt-6 mt-0">
                 <p className="text-[22px] font-sans">DigiLab</p>
               </div>
@@ -116,7 +116,7 @@ const TopCreators = () => {
                   className="lg:w-[110px] w-[60px]"
                 />
               </div>
-              <div className="ml-6">
+              <div className=" md:ml-0 ml-6">
                 <div className="flex justify-normal lg:justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">GravityOne</p>
                 </div>
@@ -146,7 +146,7 @@ const TopCreators = () => {
                   className="lg:w-[110px] w-[60px]"
                 />
               </div>
-              <div className="ml-6">
+              <div className=" md:ml-0 ml-6">
                 <div className="flex justify-normal lg:justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">Juanie</p>
                 </div>
@@ -176,7 +176,7 @@ const TopCreators = () => {
                   className="lg:w-[110px] w-[60px]"
                 />
               </div>
-              <div className="ml-6">
+              <div className=" md:ml-0 ml-6">
                 <div className="flex justify-normal lg:justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">BlueWhale</p>
                 </div>
@@ -207,7 +207,7 @@ const TopCreators = () => {
                   className="lg:w-[110px] w-[60px]"
                 />
               </div>
-              <div className="ml-6">
+              <div className=" md:ml-0 ml-6">
                 <div className="flex justify-normal lg:justify-center lg:mt-6 mt-0">
                   <p className="text-[22px] font-sans">Mr fox</p>
                 </div>
