@@ -1,3 +1,4 @@
+import BrowseCategories from "@/components/BrowseCategories";
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 import TopCreators from "@/components/TopCreators";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <TrendingCollection />
       <TopCreators />
+      <BrowseCategories />
     </>
   );
 }
