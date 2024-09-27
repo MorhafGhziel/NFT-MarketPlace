@@ -37,19 +37,21 @@ const TrendingCollection = () => {
   ];
 
   return (
-    <section className="py-[90px] bg-[#2B2B2B] flex justify-center">
+    <section className="py-[40px] md:py-[60px] lg:py-[70px] bg-[#2B2B2B] flex justify-center">
       <div className="mx-[30px]">
-        <div className="text-white">
-          <h2 className="lg:text-[38px] text-[28px] md:text-[28px] font-semibold">
-            Trending Collection
-          </h2>
-          <h2 className="text-[16px] lg:text-[22px] text-gray-200 font-sans tracking-wider mt-2">
-            Checkout our weekly updated trending collection.
-          </h2>
+        <div className="flex justify-between">
+          <div className="text-white">
+            <h2 className="lg:text-[38px] text-[28px] md:text-[28px] font-semibold">
+              Top creators
+            </h2>
+            <h2 className="text-[16px] lg:text-[22px] text-gray-200 max-w-[350px] md:max-w-[400px] lg:max-w-full font-sans tracking-wider mt-2">
+              Checkout Top Rated Creators on the NFT Marketplace
+            </h2>
+          </div>
         </div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-8 mt-14 text-white font-sans">
+          <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-8 mt-10 text-white font-sans">
             <div>
               <Image src={Prim1} alt="Prim One" />
               <div className="flex gap-4 mt-4">

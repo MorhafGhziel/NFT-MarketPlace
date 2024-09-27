@@ -7,7 +7,7 @@ import BigInfo from "@/public/BigInfo.svg";
 
 const Hero = () => {
   return (
-    <section className="py-[30px] bg-[#2B2B2B]">
+    <section className="py-[40px] md:py-[60px] lg:py-[70px] bg-[#2B2B2B]">
       <div className="md:flex gap-x-10 items-center justify-center mx-[30px]">
         <div className="max-w-[340px] md:max-w-[320px] lg:max-w-[480px] lg:leading-none m-auto md:m-0">
           <div className="m-auto">
