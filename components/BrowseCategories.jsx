@@ -4,8 +4,9 @@ const BrowseCategories = () => {
   return (
     <section>
       <div>
-        <h4>Browse Categories</h4>
+        <h4 className="text-[28px]">Browse Categories</h4>
       </div>
+      <div></div>
     </section>
   );
 };
