@@ -1,4 +1,5 @@
 import BrowseCategories from "@/components/BrowseCategories";
+import DiscovermoreNFTs from "@/components/DiscovermoreNFTs";
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
 import TopCreators from "@/components/TopCreators";
@@ -12,6 +13,7 @@ export default function Home() {
       <TrendingCollection />
       <TopCreators />
       <BrowseCategories />
+      <DiscovermoreNFTs />
     </>
   );
 }
