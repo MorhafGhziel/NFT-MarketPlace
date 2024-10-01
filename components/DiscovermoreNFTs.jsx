@@ -1,4 +1,8 @@
 import React from "react";
+import NFTCardsRow1 from "@/public/NFTCardsRow1.png";
+import NFTCardsRow2 from "@/public/NFTCardsRow2.png";
+import NFTCardsRow3 from "@/public/NFTCardsRow3.png";
+import Image from "next/image";
 
 const DiscovermoreNFTs = () => {
   return (
@@ -11,6 +15,7 @@ const DiscovermoreNFTs = () => {
           Checkout Top Rated Creators on the NFT Marketplace
         </h2>
       </div>
+      <div></div>
     </section>
   );
 };
