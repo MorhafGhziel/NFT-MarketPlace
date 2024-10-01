@@ -55,35 +55,41 @@ const BrowseCategories = () => {
   ];
 
   return (
-    <section className="py-[40px] md:py-[60px] lg:py-[70px] bg-[#2B2B2B]">
-      <div className="text-[28px] font-sans">
-        <h4>Browse Categories</h4>
-      </div>
-      <div className="flex flex-wrap justify-center gap-4 md:hidden">
-        {/* Map over categories array to render images */}
-        {categoriesSm.map((category) => (
-          <div key={category.id}>
-            <Image src={category.src} alt={category.alt} />
+    <section className="py-[40px] md:py-[30px] lg:py-[90px] bg-[#2B2B2B]">
+      <div className="lg:max-w-5xl md:max-w-2xl max-w-[350px] mx-auto">
+        <div className="">
+          <h2 className="lg:text-[38px] text-white text-[28px] md:text-[28px] font-semibold">
+            Browse Categories
+          </h2>
+        </div>
+        <div className="lg:mt-[60px] mt-10">
+          <div className="grid grid-cols-2 justify-center gap-4 md:hidden">
+            {/* Map over categories array to render images */}
+            {categoriesSm.map((category) => (
+              <div key={category.id}>
+                <Image src={category.src} alt={category.alt} />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      <div className="flex flex-wrap justify-center gap-6 lg:hidden">
-        {/* Map over categories array to render images */}
-        {categoriesMd.map((category) => (
-          <div key={category.id}>
-            <Image src={category.src} alt={category.alt} />
+          <div className="md:grid md:grid-cols-4 justify-center gap-6 lg:hidden hidden">
+            {/* Map over categories array to render images */}
+            {categoriesMd.map((category) => (
+              <div key={category.id}>
+                <Image src={category.src} alt={category.alt} />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      <div className="lg:grid lg:grid-cols-4 max-w-5xl mx-auto justify-center gap-6 hidden">
-        {/* Map over categories array to render images */}
-        {categoriesLg.map((category) => (
-          <div key={category.id}>
-            <Image src={category.src} alt={category.alt} />
+          <div className="lg:grid lg:grid-cols-4 justify-center gap-6 hidden">
+            {/* Map over categories array to render images */}
+            {categoriesLg.map((category) => (
+              <div key={category.id}>
+                <Image src={category.src} alt={category.alt} />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );
