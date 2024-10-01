@@ -56,7 +56,7 @@ const BrowseCategories = () => {
 
   return (
     <section className="py-[40px] md:py-[30px] lg:py-[90px] bg-[#2B2B2B] flex justify-center">
-      <div className="lg:max-w-5xl md:max-w-2xl max-w-[350px] mx-auto">
+      <div className="lg:max-w-6xl md:max-w-2xl max-w-[350px] mx-auto">
         <div className="">
           <h2 className="lg:text-[38px] text-white text-[28px] md:text-[28px] font-semibold">
             Browse Categories
