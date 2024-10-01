@@ -2,7 +2,7 @@ import React from "react";
 import NFTCard1 from "@/public/NFTCard1.svg";
 import NFTCard2 from "@/public/NFTCard2.svg";
 import NFTCard3 from "@/public/NFTCard3.svg";
-import EyeIcon from "@/public/eye.svg";
+import EyeIcon from "@/public/Eye.svg";
 import Image from "next/image";
 
 const DiscovermoreNFTs = () => {
