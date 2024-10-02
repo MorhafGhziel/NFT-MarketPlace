@@ -1,27 +1,28 @@
 import React from "react";
-import LargBg from "@/public/LargBg.svg";
-import MidBg from "@/public/MidBg.svg";
-import SmallBg from "@/public/SmallBg.svg";
-import Image from "next/image";
 
 const NFTHighlight = () => {
   return (
-    <section>
-      <Image
-        src={LargBg}
-        alt="Bg Mushrooms"
-        className="w-full lg:block md:hidden hidden"
-      />
-      <Image
-        src={MidBg}
-        alt="Bg Mushrooms"
-        className="w-full lg:hidden md:block hidden"
-      />
-      <Image
-        src={SmallBg}
-        alt="Bg Mushrooms"
-        className="w-full lg:hidden md:hidden block"
-      />
+    <section className="relative w-full h-screen">
+      {/* Large Background */}
+      <div
+        className="hidden lg:block absolute inset-0 bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: `url('/LargBg.svg')` }}
+      ></div>
+
+      {/* Medium Background */}
+      <div
+        className="hidden md:block lg:hidden absolute inset-0 bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: `url('/MidBg.svg')` }}
+      ></div>
+
+      {/* Small Background */}
+      <div
+        className="block md:hidden absolute inset-0 bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: `url('/SmallBg.svg')` }}
+      ></div>
+
+      {/* Add your content here */}
+      <div className="relative z-10">{/* Your content */}</div>
     </section>
   );
 };
