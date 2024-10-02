@@ -17,7 +17,11 @@ const NFTHighlight = () => {
         alt="Bg Mushrooms"
         className="w-full lg:hidden md:block hidden"
       />
-      <Image src={SmallBg} alt="Bg Mushrooms" />
+      <Image
+        src={SmallBg}
+        alt="Bg Mushrooms"
+        className="w-full lg:hidden md:hidden block"
+      />
     </section>
   );
 };
