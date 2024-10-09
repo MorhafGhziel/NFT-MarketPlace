@@ -6,6 +6,7 @@ import Avatar from "@/public/Avatar.svg";
 const NFTHighlight = () => {
   return (
     <section className="relative w-full h-screen">
+      {/* mushroom bg */}
       {/* Large Background */}
       <div
         className="hidden lg:block absolute inset-0 bg-cover bg-no-repeat bg-center"
