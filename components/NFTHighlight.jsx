@@ -41,7 +41,7 @@ const NFTHighlight = () => {
               </h2>
             </div>
 
-            <div className="flex justify-center text-[#2B2B2B] font-sans">
+            <div className="flex justify-left text-[#2B2B2B] font-sans">
               <div className="bg-white w-fit rounded-xl px-10 py-3">
                 <button className="flex items-center justify-center gap-3">
                   <Image src={EyeIcon} alt="Eye Icon" />
