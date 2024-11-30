@@ -37,7 +37,7 @@ const NFTHighlight = () => {
 
             <div>
               <h2 className="text-[16px] lg:text-[51px] text-white font-bold font-sans tracking-wider">
-                Magic Mushrooms
+                Magic Mushroomss
               </h2>
             </div>
 
