@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import CategoryCard from "@/public/CategoryCard.svg";
@@ -18,6 +20,7 @@ import CategoryCardLg5 from "@/public/CategoryCardLg5.svg";
 import CategoryCardLg6 from "@/public/CategoryCardLg6.svg";
 import CategoryCardLg7 from "@/public/CategoryCardLg7.svg";
 import CategoryCardLg8 from "@/public/CategoryCardLg8.svg";
+import { motion } from "framer-motion";
 
 const BrowseCategories = () => {
   // Group images into an array with their src and alt attributes
@@ -54,41 +57,93 @@ const BrowseCategories = () => {
     { id: 8, src: CategoryCardLg8, alt: "Category 8" },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <section className="py-[40px] md:py-[30px] lg:py-[90px] bg-[#2B2B2B] flex justify-center">
       <div className="lg:max-w-6xl md:max-w-2xl max-w-[350px] mx-auto">
-        <div className="">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <h2 className="lg:text-[38px] text-white text-[28px] md:text-[28px] font-semibold">
             Browse Categories
           </h2>
-        </div>
+        </motion.div>
         <div className="lg:mt-[60px] mt-10">
-          <div className="grid grid-cols-2 justify-center gap-4 md:hidden">
-            {/* Map over categories array to render images */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-2 justify-center gap-4 md:hidden"
+          >
             {categoriesSm.map((category) => (
-              <div key={category.id}>
+              <motion.div
+                key={category.id}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <Image src={category.src} alt={category.alt} />
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
-          <div className="md:grid md:grid-cols-4 justify-center gap-6 lg:hidden hidden">
-            {/* Map over categories array to render images */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="md:grid md:grid-cols-4 justify-center gap-6 lg:hidden hidden"
+          >
             {categoriesMd.map((category) => (
-              <div key={category.id}>
+              <motion.div
+                key={category.id}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <Image src={category.src} alt={category.alt} />
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
-          <div className="lg:grid lg:grid-cols-4 justify-center gap-6 hidden">
-            {/* Map over categories array to render images */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="lg:grid lg:grid-cols-4 justify-center gap-6 hidden"
+          >
             {categoriesLg.map((category) => (
-              <div key={category.id}>
+              <motion.div
+                key={category.id}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <Image src={category.src} alt={category.alt} />
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

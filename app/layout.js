@@ -16,7 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable}`}>{children}</body>
+      <body className={`${workSans.variable} bg-[#2B2B2B] min-h-screen`}>
+        {children}
+      </body>
     </html>
   );
 }

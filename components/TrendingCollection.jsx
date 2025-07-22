@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Prim1 from "@/public/Primary1.svg";
@@ -13,6 +15,7 @@ import Number from "@/public/Number.svg";
 import Profile1 from "@/public/Profile1.svg";
 import Profile2 from "@/public/Profile2.svg";
 import Profile3 from "@/public/Profile3.svg";
+import { motion } from "framer-motion";
 
 const TrendingCollection = () => {
   const collections = [
@@ -36,62 +39,118 @@ const TrendingCollection = () => {
     },
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <section className="py-[40px] md:py-[60px] lg:py-[70px] bg-[#2B2B2B] flex justify-center">
       <div className="mx-[30px]">
-        <div className="flex justify-between">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex justify-between"
+        >
           <div className="text-white">
-            <h2 className="lg:text-[38px] text-[28px] md:text-[28px] font-semibold">
+            <motion.h2
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="lg:text-[38px] text-[28px] md:text-[28px] font-semibold"
+            >
               Top creators
-            </h2>
-            <h2 className="text-[16px] lg:text-[22px] text-gray-200 max-w-[350px] md:max-w-[400px] lg:max-w-full font-sans tracking-wider mt-2">
+            </motion.h2>
+            <motion.h2
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="text-[16px] lg:text-[22px] text-gray-200 max-w-[350px] md:max-w-[400px] lg:max-w-full font-sans tracking-wider mt-2"
+            >
               Checkout Top Rated Creators on the NFT Marketplace
-            </h2>
+            </motion.h2>
           </div>
-        </div>
+        </motion.div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-8 mt-10 text-white font-sans">
-            <div>
-              <Image src={Prim1} alt="Prim One" />
-              <div className="flex gap-4 mt-4">
-                <Image src={sec1} alt="Sec One" />
-                <Image src={sec11} alt="Sec Two" />
-                <Image src={Number} alt="Number" />
-              </div>
-              <p className="mt-3 text-[22px]">DSGN Animals</p>
-              <div className="flex gap-x-3 mt-2">
-                <Image src={Profile1} alt="Profile One" />
-                <p className="text-gray-200 text-base">MrFox</p>
-              </div>
-            </div>
-            <div className="hidden md:block">
-              <Image src={Prim2} alt="Prim One" />
-              <div className="flex gap-4 mt-4">
-                <Image src={sec2} alt="Sec One" />
-                <Image src={sec22} alt="Sec Two" />
-                <Image src={Number} alt="Number" />
-              </div>
-              <p className="mt-3 text-[22px]">Magic Mushrooms</p>
-              <div className="flex gap-x-3">
-                <Image src={Profile2} alt="Profile One" />
-                <p className="text-gray-200 text-base">Shroomie</p>
-              </div>
-            </div>
-            <div className="lg:block hidden md:hidden">
-              <Image src={Prim3} alt="Prim One" />
-              <div className="flex gap-4 mt-4">
-                <Image src={sec3} alt="Sec One" />
-                <Image src={sec33} alt="Sec Two" />
-                <Image src={Number} alt="Number" />
-              </div>
-              <p className="mt-3 text-[22px]">Disco Machines</p>
-              <div className="flex gap-x-3">
-                <Image src={Profile3} alt="Profile One" />
-                <p className="text-gray-200 text-base">BeKind2Robots</p>
-              </div>
-            </div>
-          </div>
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-8 mt-10 text-white font-sans"
+          >
+            {collections.map((collection, index) => (
+              <motion.div
+                key={collection.title}
+                variants={itemVariants}
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <motion.div whileHover={{ scale: 1.05 }}>
+                  <Image
+                    src={collection.images[0]}
+                    alt={`Primary ${index + 1}`}
+                  />
+                </motion.div>
+                <div className="flex gap-4 mt-4">
+                  {collection.images.slice(1).map((img, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ type: "spring", stiffness: 400 }}
+                    >
+                      <Image src={img} alt={`Secondary ${i + 1}`} />
+                    </motion.div>
+                  ))}
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400 }}
+                  >
+                    <Image src={Number} alt="Number" />
+                  </motion.div>
+                </div>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                  className="mt-3 text-[22px]"
+                >
+                  {collection.title}
+                </motion.p>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                  className="flex gap-x-3 mt-2"
+                >
+                  <Image
+                    src={collection.profileImage}
+                    alt={`Profile ${index + 1}`}
+                  />
+                  <p className="text-gray-200 text-base">
+                    {collection.creator}
+                  </p>
+                </motion.div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>
