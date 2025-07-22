@@ -1,3 +1,5 @@
+"use client";
+
 import BrowseCategories from "@/components/BrowseCategories";
 import DiscovermoreNFTs from "@/components/DiscovermoreNFTs";
 import Hero from "@/components/Hero";
